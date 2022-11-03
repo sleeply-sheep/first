@@ -1,0 +1,51 @@
+/* reset default style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.center {
+  text-align: center;
+}
+
+.strong {
+  color: #de9612;
+}
+
+.button {
+  width: 200px;
+  height: 50px;
+  margin-top: 50px;
+}
+
+.cube {
+  width: 100px;
+  height: 100px;
+  background-color: #de9612;
+  transition: background-color 0.3s;
+  font-size: 18px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.cube:hover {
+  background-color: aquamarine;
+}
+
+.free {
+  animation: swim infinite 10s;
+}
+
+@keyframes swim {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(calc(100vw - 100px));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
